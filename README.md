@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Script Generator
 
 A web application for creating video scripts through AI assistance.
@@ -103,3 +104,6 @@ Each property-based test runs a minimum of 100 iterations with randomly generate
 ## Development
 
 The application follows a structured development approach based on formal requirements and design specifications. See the `.kiro/specs/ai-script-generator/` directory for detailed requirements, design, and implementation tasks.
+=======
+# HackCU12
+>>>>>>> 8deb426fb1c7acdc351568387f244bcdf2a6a155
