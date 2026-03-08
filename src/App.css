@@ -1,0 +1,166 @@
+/* Main App container styles */
+
+.App {
+  min-height: 100vh;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.App h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.App > p {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Approved state styling */
+.approved-state {
+  margin-top: 2rem;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.workflow-actions {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.workflow-actions button {
+  padding: 0.75rem 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+.workflow-actions button:first-child {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.workflow-actions button:first-child:hover {
+  background: linear-gradient(135deg, #5568d3 0%, #6a4190 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+}
+
+.workflow-actions button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.workflow-actions button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.5);
+}
+
+.workflow-actions button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.workflow-actions button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+.approved-message {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #e8f5e9;
+  border: 1px solid #4caf50;
+  border-radius: 8px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.approved-message h3 {
+  color: #2e7d32;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.approved-message p {
+  color: #1b5e20;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.approved-message button {
+  padding: 0.75rem 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.approved-message button:hover {
+  background-color: #0056b3;
+}
+
+.approved-message button:active {
+  background-color: #004085;
+  transform: scale(0.98);
+}
+
+.approved-message button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+/* Tab panel styling */
+[role="tabpanel"] {
+  padding-top: 1.5rem;
+}
+
+[role="tabpanel"][hidden] {
+  display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .App {
+    padding: 1rem;
+  }
+
+  .App h1 {
+    font-size: 2rem;
+  }
+
+  .App > p {
+    font-size: 1rem;
+  }
+}
